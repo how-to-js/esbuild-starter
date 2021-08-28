@@ -4,7 +4,8 @@
   "description": "Code generator for simple esbuild application",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "esbuild --bundle src/index.js --outfile=dist/main.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/how-to-js/esbuild-starter/issues"
   },
-  "homepage": "https://github.com/how-to-js/esbuild-starter#readme"
+  "homepage": "https://github.com/how-to-js/esbuild-starter#readme",
+  "devDependencies": {
+    "esbuild": "^0.12.24"
+  }
 }
